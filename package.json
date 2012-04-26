@@ -1,0 +1,18 @@
+{
+  "author": "Jamison Dance <jergason@gmail.com> (http://jamisondance.com)",
+  "name": "flip",
+  "description": "(╯°□°）╯︵ dıʃɟ",
+  "version": "0.0.1",
+  "main": "flip.js",
+  "scripts": {
+    "test": "mocha test/*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
