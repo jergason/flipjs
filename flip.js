@@ -82,11 +82,42 @@
     }
 
     for (i = string.length - 1; i >= 0; i--) {
+      if (containsFlipGuy(string, i)) {
+        i = flipFlipGuy(result, i);
+        continue;
+      }
       c = string.charAt(i);
       flippedChar = flipTable[c] || c;
       result.push(flippedChar);
     }
     return result.join('');
+  }
+
+  /**
+   * True if the next 7 characters, going backwards, are the flipped guy
+   */
+  function containsFlipGuy(string, i) {
+    if (i < 6) {
+      return false;
+    }
+
+    return string.substring(i-7,i).indexOf('(╯°□°）╯') !== -1;
+  }
+
+  /**
+   * Replace the flipGuy ending at i with the flippedGuy.
+   * NOTE: seems to be inserting extra spaces somehow.
+   */
+  function flipFlipGuy(flippedChars, i) {
+    var flippedGuy = '/( . 0 .\\)'
+      , flippedGuyArr
+      ;
+
+    flippedGuyArr = flippedGuy.split('');
+    flippedGuyArr.forEach(function (c) {
+      flippedChars.push(c);
+    });
+    return i - 7;
   }
 
   module.exports = dıʃɟ;

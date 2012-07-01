@@ -20,5 +20,27 @@
         ;
       assert.equal(output, undefined, 'Non-string inputs should return undefined.');
     });
+
+    describe('When flipping a string with the flip guy', function () {
+      var flippedGuy = '/( . 0 .\\)'
+        ;
+
+      it('flips the flip guy by himself', function () {
+        var toFlip = '(╯°□°）╯'
+          , output
+          ;
+
+        output = flip(toFlip);
+        assert.equal(output, flippedGuy, 'Flip-guy should be flipped as well.');
+      });
+
+      it('flips the flip guy in a sentence', function () {
+        var toFlip =  'A hill of beans (╯°□°）╯ is a wonderful thing.'
+          , flipped = '˙ƃuıɥʇ ʃnɟɹǝpuoʍ ɐ sı ' + flippedGuy + ' suɐǝq ɟo ʃʃıɥ ∀'
+          , output = flip(toFlip)
+          ;
+          assert.equal(flipped, output, 'Should work in a string');
+      });
+    });
   });
 }());

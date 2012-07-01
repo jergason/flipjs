@@ -2,17 +2,17 @@
   "author": "Jamison Dance <jergason@gmail.com> (http://jamisondance.com)",
   "name": "flip",
   "description": "(╯°□°）╯︵ dıʃɟ",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "flip.js",
   "scripts": {
-    "test": "mocha test/*"
+    "test": "./node_modules/.bin/mocha test/*"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "1.2.2"
   },
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": ">=0.6.0"
   }
 }
