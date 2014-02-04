@@ -2,7 +2,7 @@
   "author": "Jamison Dance <jergason@gmail.com> (http://jamisondance.com)",
   "name": "flip",
   "description": "(╯°□°）╯︵ dıʃɟ",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "flip.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*"
@@ -10,6 +10,10 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jergason/flipjs.git"
   },
   "optionalDependencies": {},
   "engines": {
