@@ -4,6 +4,9 @@
   "description": "(╯°□°）╯︵ dıʃɟ",
   "version": "0.1.1",
   "main": "flip.js",
+  "bin": {
+    "flip": "index.js"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*"
   },
