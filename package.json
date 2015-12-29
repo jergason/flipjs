@@ -2,7 +2,7 @@
   "author": "Jamison Dance <jergason@gmail.com> (http://jamisondance.com)",
   "name": "flip",
   "description": "(╯°□°）╯︵ dıʃɟ",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "main": "flip.js",
   "bin": {
     "flip": "index.js"
