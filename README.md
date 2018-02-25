@@ -1,14 +1,14 @@
-#flipjs
+# flipjs
 
 Flip things! Flip strings! Go mad! Test unicode support!
 
-##Command Line Usage
+## Command Line Usage
 
-###Installation
+### Installation
 ```bash
 npm install -g flip
 ```
-###Usage
+### Usage
 
 ```bash
 $ flip A Table
@@ -16,14 +16,14 @@ $ flip A Table
 ```
 
 
-##Library Usage
+## Library Usage
 
-###Installation
+### Installation
 ```bash
 npm install flip
 ```
 
-###Usage
+### Usage
 
 ```javascript
 var flip = require('flip')

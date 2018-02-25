@@ -17,7 +17,7 @@
     , '\u003C' : '\u003E'
     , '\u003F' : '\u00BF'
     , '\u0041' : '\u2200'
-    , '\u0042' : '\u10412'
+    , '\u0042' : '\uD801\uDC12'
     , '\u0043' : '\u2183'
     , '\u0044' : '\u25D6'
     , '\u0045' : '\u018E'
@@ -81,12 +81,13 @@
       return undefined;
     }
 
-    for (i = string.length - 1; i >= 0; i--) {
+    let codePoints = [...string];
+    for (i = codePoints.length - 1; i >= 0; i--) {
       if (containsFlipGuy(string, i)) {
         i = flipFlipGuy(result, i);
         continue;
       }
-      c = string.charAt(i);
+      c = codePoints[i];
       flippedChar = flipTable[c] || c;
       result.push(flippedChar);
     }
