@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var flip = require('./flip.js');
+var {flip, flipGuy} = require('./flip.js');
 var args = process.argv;
 
 
@@ -18,5 +18,5 @@ for (var i = 2; i < args.length; i++) {
 
 flipped = flip(stringToFlip);
 
-console.log("(╯°□°）╯︵" + flipped);
+console.log(flipGuy + flipped);
 

@@ -121,5 +121,8 @@
     return i - 7;
   }
 
-  module.exports = dıʃɟ;
+  module.exports = {
+    flip: dıʃɟ,
+    flipGuy: '╯°□°）╯︵'
+  };
 }());
